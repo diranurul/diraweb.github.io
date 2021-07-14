@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    font-family: "Lato", sans-serif;
+  }
+  .header{
+      width: 100%;
+      height: 150px;
+      background-color: #111;
+  }
+  .header .gambar{
+      width: 10%;
+      height: auto;
+      float: left;
+  }
+  .header .judul{
+      width: 90%;
+      
+      float: right;
+  }
+  .header img{
+      width: 100%;
+      height: auto;
+  }
+  .header h1{
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 60px;
+  }
+
+  .header2{
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/space2.gif');
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header2 .gambar{
+    width: 10%;
+    height: auto;
+    float: left;
+}
+.header2 .judul{
+    width: 90%;
+    
+    float: right;
+}
+.header2 img{
+    width: 100%;
+    height: auto;
+}
+.header2 h1{
+  color: #f1f1f1;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px;
+}
+  .content{
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+  .content-index{
+      text-align: center;
+  }
+  .content-index h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+
+  }
+  
